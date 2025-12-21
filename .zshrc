@@ -5,8 +5,8 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
     export ZSH=$HOME/.oh-my-zsh/
 fi
 
-#ZSH_THEME="sunrise"
-
+ZSH_THEME="sunrise"
+#ZSH_THEME="robbyrussell"
 plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
