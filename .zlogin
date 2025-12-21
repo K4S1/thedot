@@ -1,4 +1,6 @@
-xset r rate 200 50
+if [ -n "$DISPLAY" ] && [ "${XDG_SESSION_TYPE:-}" = "x11" ]; then
+    xset r rate 200 50
+fi
 #tmux new -d -s redshift 'redshift -l 55.22992:11.76092 -b 1.0:0.6 -t 6500:4500 -v'
 
 ### PATH
