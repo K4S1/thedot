@@ -59,6 +59,8 @@ alias COMport="sudo minicom -m -c on"
 alias rustscan='docker run -it --rm --name rustscan cmnatic/rustscan:debian-buster rustscan'
 alias testssl="docker run --rm -it ghcr.io/testssl/testssl.sh"
 
+alias upgrade="sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo snap refresh"
+
 # Changing "ls" to "eza"
 #alias ls='eza -al --color=always --group-directories-first' # my preferred listing
 #alias la='eza -a --color=always --group-directories-first'  # all files and dirs
